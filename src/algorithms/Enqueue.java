@@ -3,6 +3,7 @@ package algorithms;
 public class Enqueue {
     private int size;
     private int [] a;
+    //
     public Enqueue(int size){
         this.size=size;
         a=new int[size];
