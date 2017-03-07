@@ -1,5 +1,5 @@
 package algorithms;
-
+//
 public class Enqueue {
     private int size;
     private int [] a;
