@@ -1,30 +1,23 @@
 package algorithms;
 //
 public class Enqueue {
-    private int size;
-    private int [] a;
-    //
-    public Enqueue(int size){
-        this.size=size;
-        a=new int[size];
+    Deque data;
+    public void push(int val){
+        data.pushTop(val);
     }
-    void clear(){
-        a=null;
+    public int pop(){
+        return data.popBottom();
     }
-    int top(){
-        return(a[0]);
+
+    public Enqueue() {
+        this.data = new Deque();
     }
-    int size(){
-        return(size);
+
+    public int look(){
+        return data.lookBottom();
     }
-    void push(int element){
-        size=size+1;
-        a[size]=element;
-    }
-    void pop(){
-        for(int i=0;i<size-1;i++){
-            a[i]=a[i+1];
-        }
+    public long getSize(){
+        return data.getSize();
     }
 }
 

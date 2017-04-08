@@ -20,6 +20,7 @@ public class Stack {
         size=size+1;
         a[size]=element;
     }
+
     void pop(){
         a[size]=0;
     }
