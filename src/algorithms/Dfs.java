@@ -24,6 +24,7 @@ public class Dfs {
             for(int i=0;i<size;i++){
                 if(a[v][i]&&(!mark[i])){
                     stack.push(i);
+                    mark[i]=true;
                 }
             }
         }

@@ -20,8 +20,9 @@ public class SetOperations {
         set.addAll(a);
         Iterator i=b.iterator();
         while (i.hasNext()){
-            if(!set.add(i.next())){
-                ans.add(i.next());
+            Object o=i.next();
+            if(!set.add(o)){
+                ans.add(o);
             }
         }
         return ans;
@@ -32,10 +33,12 @@ public class SetOperations {
         Iterator it=a.iterator();
         Iterator it1=b.iterator();
         while (it.hasNext()){
-            if(i.add(it.next()))set.add(it.next());
+            Object o=it.next();
+            if(i.add(o))set.add(o);
         }
         while (it1.hasNext()){
-            if(i.add(it1.next()))set.add(it1.next());
+            Object o=it1.next();
+            if(i.add(o))set.add(o);
         }
         return set;
     }

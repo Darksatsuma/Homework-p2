@@ -11,6 +11,7 @@ public class Deque {
         Node n=new Node(v);
         if (size==0){
             head=n;
+            tail=n;
             size++;
             return;
         }
@@ -29,6 +30,7 @@ public class Deque {
     void pushBottom(int v){
         Node n=new Node(v);
         if (size==0){
+            head=n;
             tail=n;
             size++;
             return;
